@@ -1,0 +1,10 @@
+[
+	{
+		"pkg": "contacts-plugin",
+		"classpath": "com.chavez.www.ContactsPlugin"
+	},
+	{
+		"pkg": "contacts-plugin",
+		"classpath": "com.chavez.www.ContactsPluginPlugin"
+	}
+]

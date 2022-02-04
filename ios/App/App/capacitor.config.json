@@ -1,0 +1,6 @@
+{
+	"appId": "com.umar.plugin",
+	"appName": "umarPlufin",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
