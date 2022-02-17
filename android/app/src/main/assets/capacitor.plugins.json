@@ -1,10 +1,22 @@
 [
 	{
-		"pkg": "contacts-plugin",
-		"classpath": "com.chavez.www.ContactsPlugin"
+		"pkg": "@capacitor/app",
+		"classpath": "com.capacitorjs.plugins.app.AppPlugin"
 	},
 	{
-		"pkg": "contacts-plugin",
-		"classpath": "com.chavez.www.ContactsPluginPlugin"
+		"pkg": "@capacitor/haptics",
+		"classpath": "com.capacitorjs.plugins.haptics.HapticsPlugin"
+	},
+	{
+		"pkg": "@capacitor/keyboard",
+		"classpath": "com.capacitorjs.plugins.keyboard.KeyboardPlugin"
+	},
+	{
+		"pkg": "@capacitor/status-bar",
+		"classpath": "com.capacitorjs.plugins.statusbar.StatusBarPlugin"
+	},
+	{
+		"pkg": "@proteansoftware/capacitor-square",
+		"classpath": "com.proteansoftware.capacitor.square.CapacitorSquarePlugin"
 	}
 ]

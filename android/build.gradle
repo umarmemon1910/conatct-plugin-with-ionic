@@ -1,9 +1,16 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    
+
     repositories {
         google()
+      maven {
+        url "https://sdk.squareup.com/android"
+        credentials {
+          username SQUARE_READER_SDK_APPLICATION_ID
+          password SQUARE_READER_SDK_REPOSITORY_PASSWORD
+        }
+      }
         jcenter()
     }
     dependencies {

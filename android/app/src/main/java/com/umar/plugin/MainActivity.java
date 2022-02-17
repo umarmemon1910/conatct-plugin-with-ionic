@@ -1,20 +1,14 @@
 package com.umar.plugin;
+import com.proteansoftware.capacitor.square.CapacitorSquarePlugin;
 import com.getcapacitor.BridgeActivity;
-package io.ionic.starter;
 import android.os.Bundle;
 import com.getcapacitor.Plugin;
 import java.util.ArrayList;
- 
+
 public class MainActivity extends BridgeActivity {
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
- 
-    // Initializes the Bridge
-    this.init(savedInstanceState, new ArrayList<Class<? extends Plugin>>() {{
-      // Additional plugins you've installed go here
-      add(ContactsPlugin.class);
-    }});
+            registerPlugin(CapacitorSquarePlugin.class);
   }
- 
 }

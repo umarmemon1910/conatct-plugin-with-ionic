@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Plugins } from '@capacitor/core';
-import 'contacts-plugin';
-const { ContactsPlugin } = Plugins;
+import '@proteansoftware/capacitor-square';
+const { CapacitorSquarePlugin } = Plugins;
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -10,11 +10,17 @@ const { ContactsPlugin } = Plugins;
 export class HomePage {
   contacts = [];
 
-  constructor() {
-  }
+  constructor() {}
 
-  async loadContacts() {
-    this.contacts = (await ContactsPlugin.getContacts('somefilter')).results;
-    console.log('my contacts: ', this.contacts);
+  onPayment() {
+    CapacitorSquarePlugin.initApp({
+      applicationId: 'sq0idp-0Q7DnnJ3Ng46NotNICuqVQ',
+    });
+    const isInit = CapacitorSquarePlugin.isInitalised();
+    console.log(isInit);
+    CapacitorSquarePlugin.startTransaction({
+      totalAmount: 100,
+      currencyCode: 'INR',
+    });
   }
 }

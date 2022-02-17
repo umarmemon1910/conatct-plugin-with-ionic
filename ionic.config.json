@@ -1,5 +1,8 @@
 {
   "name": "umarPlugin",
-  "integrations": {},
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
   "type": "angular"
 }
